@@ -2,6 +2,24 @@
 
 Config Service for Polar Bookshop that use Spring Cloud Config Server.
 
+## Build and Run locally
+
+```bash
+./gradlew build -i
+```
+
+```
+./gradlew bootRun
+```
+
+## Vulnerability Scan
+
+We will use [grype](https://github.com/anchore/grype) as our vulnerability scanner for CI and locally.
+
+```bash
+grype . --name config-service
+```
+
 ## References
 
 * Created
