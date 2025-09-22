@@ -55,5 +55,5 @@ tasks.named('compileJava') {
 
 bootBuildImage {
     imageName = "${project.name}"
-    environment = ["BP_JVM_VERSION": "24.*"]
+    environment = ["BP_JVM_VERSION": "25.*"] //TODO: here we use java 25 but everything else compiled using java 24
 }
