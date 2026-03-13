@@ -20,7 +20,7 @@ description = 'Config Service for Polar Bookshop '
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(24)
+        languageVersion = JavaLanguageVersion.of(25)
     }
 }
 
@@ -55,5 +55,5 @@ tasks.named('compileJava') {
 
 bootBuildImage {
     imageName = "${project.name}"
-    environment = ["BP_JVM_VERSION": "25.*"] //TODO: here we use java 25 but everything else compiled using java 24
+    environment = ["BP_JVM_VERSION": "25.*"]
 }
