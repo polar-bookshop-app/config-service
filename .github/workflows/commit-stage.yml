@@ -24,10 +24,10 @@ jobs:
       - name: Checkout sources
         uses: actions/checkout@v4
 
-      - name: Setup GraalVM 24
+      - name: Setup GraalVM 25
         uses: graalvm/setup-graalvm@v1
         with:
-          java-version: '24'
+          java-version: '25'
           distribution: 'graalvm'
           cache: gradle
 
